@@ -11,3 +11,141 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.note.new{
+  background-color: #67d7cc;
+  padding-top: 1em;
+}
+
+.note.edit{
+  background-color: #a3ec9f;
+  padding-top: 1em;
+}
+
+.edit-area {
+  border: none !important;
+  resize: none !important;
+  background-color: #a3ec9f !important;
+}
+
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fef68a;
+  border-radius: 10px;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: rgb(233, 233, 233);
+  width: 100%;
+
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.bucket-name {
+  background-color: #858484;
+  border-radius: 10px;
+  padding: 0.5em;
+  inline-size: max-content;
+  color: white;
+  font-weight: 500;
+}
+.edit-icon {
+  margin-right: 0.5em;
+  cursor: pointer;
+
+}
+.bucket-input {
+  font-weight: 800;
+  font-size: 1.25em;
+}
+.group {
+  display: flex;
+  align-items: center;
+  justify-content:start
+}
+.group-button {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
